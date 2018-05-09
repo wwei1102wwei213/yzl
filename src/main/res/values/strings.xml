@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">游子礼短信发送系统</string>
+    <string name="setting">设置</string>
+    <string name="send_msg">发送</string>
+    <string name="send_list">发送列表</string>
+    <string name="to_send_msg">去发送</string>
+    <string name="setting_phone">发送号码:</string>
+    <string name="setting_time">设置间隔:</string>
+    <string name="random_space">随机范围:</string>
+    <string name="test_flag">发送测试数据:</string>
+</resources>

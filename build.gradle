@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "cn.wwei.yzlsms"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 8
+        versionName "1.8"
+//        multiDexEnabled true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    //qiangang
+    //yzlsms2
+    //qiangang507
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.6.0'
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/thinkandroid-1.1-bin.jar')
+    compile project(':XRefreshLibrary')
+}
